@@ -1,0 +1,87 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: sans-serif;
+    background-color: #e5e5e5;
+}
+
+main {
+    height: 550px;
+    width: 320px;
+    overflow-y: scroll;
+    border: 2px solid #abcea1;
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 15px;
+}
+main::-webkit-scrollbar{
+    width: 0;
+}
+#app_name{
+    margin-bottom: .8rem;
+    font-size: 1.4rem;
+}
+#newTask {
+    background-color: rgba(171, 206, 161, .35);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.fa-plus {
+    background-color: #abcea1;
+    padding: 3px;
+    border-radius: 3px;
+}
+h5{
+    text-align: center;
+    margin: .8rem 0;
+}
+#tasks{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.task {
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+    border: 2px solid #abcea1;
+    border-radius: 4px;
+    background-color: rgba(171, 206, 161, .35);
+    padding: 10px;
+
+
+}
+
+.task span:nth-child(1) {
+    font-weight: bold;
+}
+
+.task span:nth-child(2) {
+    color: grey;
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+    gap: .6rem;
+}
+.options i{
+    cursor: pointer;
+}
+
+#mssg{
+    color: red;
+}
